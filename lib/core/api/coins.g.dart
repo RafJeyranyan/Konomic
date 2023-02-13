@@ -6,14 +6,36 @@ part of 'coins.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-Coins _$CoinsFromJson(Map<String, dynamic> json) => Coins(
-      id: json['id'] as String?,
-      name: json['name'] as String?,
-      symbol: json['symbol'] as String?,
+Coin _$CoinFromJson(Map<String, dynamic> json) => Coin(
+      coinID: json['coinID'] as String?,
+      coinImage: json['coinImage'] as String?,
+      coinName: json['coinName'] as String?,
+      coinShortName: json['coinShortName'] as String?,
+      coinPrice: json['coinPrice'] as String?,
+      coinLastPrice: json['coinLastPrice'] as String?,
+      coinPercentage: json['coinPercentage'] as String?,
+      coinSymbol: json['coinSymbol'] as String?,
+      coinPairWith: json['coinPairWith'] as String?,
+      coinHighDay: json['coinHighDay'] as String?,
+      coinLowDay: json['coinLowDay'] as String?,
+      coinDecimalPair: json['coinDecimalPair'] as int?,
+      coinDecimalCurrency: json['coinDecimalCurrency'] as int?,
+      coinListed: json['coinListed'] as bool?,
     );
 
-Map<String, dynamic> _$CoinsToJson(Coins instance) => <String, dynamic>{
-      'id': instance.id,
-      'symbol': instance.symbol,
-      'name': instance.name,
+Map<String, dynamic> _$CoinToJson(Coin instance) => <String, dynamic>{
+      'coinID': instance.coinID,
+      'coinImage': instance.coinImage,
+      'coinName': instance.coinName,
+      'coinShortName': instance.coinShortName,
+      'coinPrice': instance.coinPrice,
+      'coinLastPrice': instance.coinLastPrice,
+      'coinPercentage': instance.coinPercentage,
+      'coinSymbol': instance.coinSymbol,
+      'coinPairWith': instance.coinPairWith,
+      'coinHighDay': instance.coinHighDay,
+      'coinLowDay': instance.coinLowDay,
+      'coinDecimalPair': instance.coinDecimalPair,
+      'coinDecimalCurrency': instance.coinDecimalCurrency,
+      'coinListed': instance.coinListed,
     };

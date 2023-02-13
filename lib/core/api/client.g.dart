@@ -19,13 +19,13 @@ class _MainApi implements MainApi {
   String? baseUrl;
 
   @override
-  Future<List<Coins>> getCoins() async {
+  Future<List<Coin>> getCoins() async {
     const _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
     final _headers = <String, dynamic>{};
     final _data = <String, dynamic>{};
     final _result =
-        await _dio.fetch<List<dynamic>>(_setStreamType<List<Coins>>(Options(
+        await _dio.fetch<List<dynamic>>(_setStreamType<List<Coin>>(Options(
       method: 'GET',
       headers: _headers,
       extra: _extra,
@@ -38,7 +38,7 @@ class _MainApi implements MainApi {
             )
             .copyWith(baseUrl: baseUrl ?? _dio.options.baseUrl)));
     var value = _result.data!
-        .map((dynamic i) => Coins.fromJson(i as Map<String, dynamic>))
+        .map((dynamic i) => Coin.fromJson(i as Map<String, dynamic>))
         .toList();
     return value;
   }

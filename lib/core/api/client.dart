@@ -10,9 +10,7 @@ part 'client.g.dart';
 abstract class MainApi {
   factory MainApi(Dio dio) = _MainApi;
 
-  // USER
-
   @GET("/coins")
-  Future<List<Coins>> getCoins();
+  Future<List<Coin>> getCoins();
 
 }

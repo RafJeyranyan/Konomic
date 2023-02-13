@@ -5,8 +5,8 @@ abstract class AppColors{
   static const primary = Colors.black;
   static const contrast = Colors.white;
 
-  static const appBar = Color(0x9FD3EFCF);
-  static const backGround = Color(0x9FEDF8E1);
+  static const appBar = Color(0x9FCBF5C6);
+  static const backGround = Color(0xCDECEFEB);
 
   static const tokenA = Colors.deepOrange;
   static const tokenB = Colors.pinkAccent;

@@ -35,9 +35,12 @@ dependencies:
   flutter_bloc: ^8.1.2
   json_annotation: ^4.8.0
   dio: ^4.0.6
-  socket_io_client: ^2.0.1
+  equatable: ^2.0.5
+  crypto_market: ^0.0.2
   graphql_flutter: ^5.1.2
   retrofit: '>=3.0.0 <4.0.0'
+  web_socket_channel: ^2.1.0
+  k_chart: ^0.6.0
 
 
   # The following adds the Cupertino Icons font to your application.
